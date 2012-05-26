@@ -1,0 +1,370 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html {
+ 	margin: 0 0;
+ 	padding: 0 0;
+}
+
+html, body {
+	width: 320px;
+	font-size: 1em;
+	color: #FFFFFF;
+	font-family: 'Signika', Helvetica;
+}
+
+
+/* h1 {
+	font-size: 1.375em;
+	line-height: 1em;
+}
+h2 {
+	font-size: 1.25em;
+	line-height: 1.0909em;
+}
+h3 {
+	font-size: 1.125em;
+	line-height: 1.2em;
+}
+h4 {
+	font-size: 1.0625em;
+	line-height: 1.333em;
+} */
+
+
+/* ********************* */
+/* logo and company name */
+header#head {
+	float: none;
+	margin: 0 0 0 0;
+	padding: 3%;
+	width: 320px;
+	background: #0869a0;;
+}
+img.logo {
+	margin: 0 16px 0 0;
+	padding: 0 0 0 0;
+	width:  35%;
+	-webkit-transition: all 0.4s ease-in-out; 
+    -moz-transition: all 1000ms ease-in-out; 
+    -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    -o-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    transition: all 1000ms ease-in-out; /* custom */
+}
+header#head h1 {
+	/* sizing */
+	font-size: 18px;
+	font-weight: bold;
+}
+
+img.map {
+	width: 33%;
+	float: none;
+	width: 100%;
+	display: none;
+}
+
+h1.logo-text {
+	font-size: 1rem;
+	color: white;
+	font-weight: bold;
+	font-family: Palatino, Times, serif;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 0 .25em;
+	-webkit-transition: all 0.4s ease-in-out; 
+    -moz-transition: all 1000ms ease-in-out; 
+    -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    -o-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    transition: all 1000ms ease-in-out; /* custom */
+}
+
+/* ****************************** */
+/* home and contact us list links */
+header#right-link {
+	clear: both;
+	position: relative;
+	margin: 0 0;
+	padding: 0 0;
+	width: 320px;
+}
+/* home and contact us list links */
+header#right-link ul{
+	/* positioning */
+	float: none;
+	position: relative;
+	width: 320px;
+	margin: 16px;
+	padding: 16px;
+	display: inline;
+	/* list specifics */
+	list-style: none;
+	font-size: 16px;
+}
+header#right-link ul li {
+	/* positioning */
+	margin: 0 0 0 0;
+	padding: 0 0 0 12px;
+	display: inline;
+	/* styling */
+	list-style: none;
+	text-decoration: none;
+	border-left: 1px solid #cccccc;
+	position: relative;
+	float: none;
+}
+header#right-link ul li.first {
+	margin: 0;
+	padding: 0 12px 0 88px;
+	border-left: none;
+	list-style: none;
+	display: inline;
+}
+/* format the actual link */
+header#right-link li a {
+	text-decoration: none;
+	color: #00448f;
+}
+header#right-link li a:hover {
+	color: #00448f;
+	text-shadow: #8a8a8a 1px 1px 0;
+}
+
+
+
+
+/* hide the slide show to conserve bandwidth */
+article.dynamic-display {
+	display: none;
+	position: relative;
+	width: 100%;
+	clear: both;
+	padding: 0 0 0 0;
+}
+article.dynamic-display img {
+	display: none;
+	width: 100%;
+	height: 220px;
+}
+
+
+
+
+
+/* **************** */
+/* three link boxes */
+/* each box */
+article#three-boxes {
+	width: 320px;
+	margin: 12px 0 0 0;
+	padding: 0 0 0 0;
+	background-color: #dddddd;
+	position: relative;
+	float: left;
+}
+/* clear the left-most border away */
+article#three-boxes.first {
+	border-left: none;
+	margin: 12px 0 0 0;
+	padding: 0 0 0 0;
+}
+/* header headline text parameters */
+article#three-boxes header h2 {
+	font-size: 20px;
+	padding: 8px 0 8px 12px;
+	margin: 0 0 0 0;
+	color: #dddddd;
+	font-weight: bold;
+}
+/* header paragraph text parameters */
+article#three-boxes p {
+	color: #575757;
+	font-size: .75em;
+	line-height: 1.4em;
+	padding: 8px 8px;
+	background-color: #eeeeee;
+}
+
+
+
+
+
+/* ********************* */
+/* big paragraph on left */
+section#big-area {
+	width: 320px;
+	background-color: #ffffff;
+	margin: 10px 0;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+img.inline-image {
+	position: relative;
+	float: left;
+	margin: 8px 12px 3px 0;
+}
+section#big-area h2 {
+	font-size: 18px;
+	font-weight: bold;
+	padding: 8px 8px;
+	margin: 0 0 0 0;
+}
+section#big-area p {
+	font-size: 14px;
+	line-height: 1.4em;
+	padding: 0 12px 14px 12px;
+	margin: 0 0 0 0;
+	color: #676767;
+}
+
+/* for a list in the main area */
+section#big-area ul {
+	list-style-type: disc;
+	margin-left: 0;
+	padding-left: 2em;
+	padding-bottom: 16px;
+	list-style-position: inside;
+	text-indent: -1em;
+}
+section#big-area li {
+	font-size: .8em;
+	line-height: 1.7em;
+	color:  #575757;
+}
+section#big-area ul ul {
+	padding-bottom: 4px;
+}
+section#big-area ul ul li {
+	list-style: none;
+}
+
+
+
+
+
+/* ****************** */
+/* aside */
+aside {
+	position: relative;
+	width: 320px;
+	margin: 0 0;
+	padding: 0 8px;
+	background-color: #ffffff;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+/* aside list */
+.aside-list {
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 1.0em;
+	list-style-position: inside;
+	text-indent: -1em;
+	margin: 0 0 12px 0;
+}
+.aside-list li {
+	font-size: 12px;
+	line-height: 1.6em;
+	color: #575757;
+}
+.aside-list ul li {
+	font-size: 12px;
+	text-indent: .015625em;
+	list-style-type: none;
+}
+
+
+article#related-info header {
+	position: relative;
+	clear: both;
+	margin: 20px 0 10px 0;
+	padding: 12px;
+background: -webkit-linear-gradient(left,  rgba(204,222,226,0.12) 0%,rgba(247,251,252,1) 100%); /* Chrome10+,Safari5.1+ */
+background: linear-gradient(left,  rgba(204,222,226,0.12) 0%,rgba(247,251,252,1) 100%); /* W3C */
+
+}
+article#related-info h4 {
+	font-size: 1em;
+	margin: 0;
+	padding: 0;
+}
+article#related-info p {
+	font-size: 12px;
+	margin: 0 8px 6px 0;
+	padding: 0;
+	line-height: 1.5em;
+	color: #575757;
+}
+article#related-info img {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+
+
+
+
+
+
+
+/* ****** */
+/* footer */
+footer#big-footer {
+	width: 320px;
+	margin: 0 0 0 0;
+	padding: 8px 0;
+	text-align: center;
+}
+/* inline list for footer navigation */
+/* define with the list will look like */
+footer#big-footer nav ul {
+	list-style: none;
+	margin: 12px 0;
+	padding: 0;
+	border: none;
+}
+footer#big-footer nav li {
+	margin: 0;
+	display: inline;
+}
+/* define the links */
+footer#big-footer nav li a {
+	font-size: 11px;
+	border-left: 1px solid #cccccc;
+	padding: 0 8px;
+	text-decoration: none;
+	width: 318px;
+}
+/* tweak for really really old browsers */
+html>body footer#big-footer nav li a {
+	width: auto;
+}
+/* remove left pipe for first item on list */
+footer#big-footer nav ul li.no-left-pipe a {
+	/* get rid of the left-most pipe (vertical line) */
+	border-left: none;
+}
+footer#big-footer nav li a:hover {
+	color: orangered;
+}
+/* color the footer nav links */
+ul.footer-nav a {
+	color: #00448f;
+}
+.breathing-room-right {
+	margin: 0 12px 8px 6px;
+}
+
+
+
+
+small {
+	font-size: 10px;
+	color: #575757;
+}
+.normal-weight {
+	font-weight: normal !important;
+}

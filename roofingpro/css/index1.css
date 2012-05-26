@@ -1,0 +1,129 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* styling html tag to center page */
+html {
+	margin: 0.875em auto;
+ 	padding: 0 1em;
+	max-width: 180em; /* 1920px / 16px = 120em */
+ 	box-sizing: border-box; /* traditional model: box sizes applied to border AND everything inside. */
+	-moz-box-sizing: border-box; /* Firefox, etc. */
+	-ms-box-sizing: border-box; /* for IE10 and below */
+	font-size: 62.5%
+}
+
+ 
+/* unify all the border box items here */
+* html, header {
+	 box-sizing: border-box; /* traditional model: box sizes applied to border AND everything inside. */
+	-moz-box-sizing: border-box; /* Firefox, etc. */
+	-ms-box-sizing: border-box;
+}
+
+body {
+	background-color: #ffffff;
+	font: 1.4rem "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+/* main header */
+header#head {
+	position: relative;
+	float: none;
+	width: auto;
+	padding: 1%;
+	border: 1px solid green;
+	background: #0869a0;
+	overflow: auto;
+}
+img.logo {
+	width: 20%;
+	position: relative;
+	float: left;
+	display: inline-block;
+	vertical-align: top;
+}
+h1.logo-text {
+	float: left;
+	position: relative;
+}
+img.map {
+	width: 33%;
+	position: relative;
+	float: left;
+}
+.logo-text {
+	font-size: 6rem;
+	color: white;
+	font-weight: bold;
+	font-family: Palatino, Times, serif;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 0 .25em;
+	-webkit-transition: all 0.4s ease-in-out; 
+    -moz-transition: all 1000ms ease-in-out; 
+    -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    -o-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    transition: all 1000ms ease-in-out; /* custom */
+}
+
+#big-section {
+	position: relative;
+	float: left;
+	width: 62%;
+}
+#small-section {
+	position: relative;
+	float: left;
+	width: 37%;
+}
+
+.clear-both {
+	clear: both;
+}
+
+footer {
+}
+
+
+/* styling */
+.button a {
+	float: left;
+	position: relative;
+	border: 1px solid green;
+	width: auto;
+	text-decoration: none;
+	padding: 2%;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 2px solid green;
+	left: 33%;
+	margin: 7% 0 7% 0;
+	-webkit-transition: all 0.4s ease-in-out; 
+   -moz-transition: all 1000ms ease-in-out; 
+    -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    -o-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    transition: all 1000ms ease-in-out; /* custom */
+}
+.button a:hover {
+	float: left;
+	position: relative;
+	border: 1px solid green;
+	width: auto;
+	text-decoration: none;
+	padding: 2% 6%;
+	border-radius: 10px; 
+	-moz-border-radius: 10px; 
+	-webkit-border-radius: 10px; 
+	border: 2px solid green;
+	left: 29%;
+	margin: 7% 0;
+	-webkit-transition: all 0.4s ease-in-out; 
+   -moz-transition: all 1000ms ease-in-out; 
+    -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    -o-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    transition: all 1000ms ease-in-out; /* custom */
+}
+
+/* Generic Utility */
+.hide { position: absolute; top: -9999px; left: -9999px; }
