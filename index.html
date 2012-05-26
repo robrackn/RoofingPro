@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<!-- Enable IE9 Standards mode -->
+  <meta http-equiv="X-UA-Compatible" content="IE=9" >
+
+<script src="javascript/jquery171.js"></script>
+<script src="javascript/jquery-ui-1.8/ui/jquery-ui.js"></script>
+<script src="javascript/jquery-ui-1.8/ui/jquery.ui.core.js"></script>
+<script src="javascript/jquery-ui-1.8/ui/jquery.effects.core.js"></script>
+<script src="javascript/jquery-ui-1.8/ui/jquery.ui.widget.js"></script>
+<script src="javascript/tabber.js"></script>
+<script type='text/javascript'>
+    $(function() {
+
+        $("#tabber").organicTabs();
+
+        $("#tabber2").organicTabs({
+            "speed": 200
+        });
+
+    });
+</script>
+
+
+
+<link rel="stylesheet" type/text/css href="css/html5reset-1.6.11.css">
+
+<!-- takes care of hyphenating lines of copy. use the "hyphenate" class to instantiate. -->
+<script src="javascript/Hyphenator.js"></script>
+<script>
+       Hyphenator.run();
+</script>
+
+<!-- <script src="javascript/mobilemenu.js"></script> -->
+
+<title>Valley Roof Professionals</title>
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link href="css/index.css" rel="stylesheet" type="text/css">
+
+<!-- special situations for IE8 and below -->
+<!-- not really gong to worry about IE6 compatibility. MS killed it off. -->
+<!--[if lte IE 8]>
+<link href="css/ie81.css" rel="stylesheet" type="text/css">
+<![endif]-->
+
+
+<!-- take care of HTML5 tags for IE -->
+<!--[if IE]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- force older versions of IE to behave like a standards-compliant browser -->
+<!-- link to information: http://code.google.com/p/ie7-js/ -->
+<!--[if lte IE 7]>
+<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE8.js"></script>
+<![endif]-->
+
+<!-- will be used to fix any IE 6 bugs that may show up -->
+<!--[if lt IE 7]>
+<link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/>
+<![endif]-->
+
+<!-- Handle Gradients In IE9 -->
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+<!-- iphone portrait orientation -->
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+<!-- <link rel="stylesheet" media="only screen and (max-device-width: 480px) and (orientation:portrait)" href="css/iphone-portrait1.css"> -->
+<link rel="apple-touch-icon" href="vrp.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="vrp72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="vrp114.png" />
+
+</head>
+
+<body>
+
+<header>Valley Roof Professionals</header>
+  
+
+  
+<div id="big-section">
+
+</div>  
+
+<div id="small-section">
+
+<!-- twitter test
+<script charset="utf-8" src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'list',
+  rpp: 30,
+  interval: 30000,
+  title: 'Everything I Find',
+  subject: 'Interesting',
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#e0effc',
+      color: '#000000'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#002bff'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: true,
+    behavior: 'all'
+  }
+}).render().setList('richardbrackin', 'social-apps').start();
+</script>
+<!-- twitter test -->
+
+<h3 class="button"><a href="#form">Request an estimate</a></h3>
+</div>  
+
+<div class="clear-both">&nbsp;</div>
+
+<div id="tabber">
+    <ul class="nav">
+                <li class="nav-one"><a href="#featured" class="current">Counties Served</a></li>
+                <li class="nav-two"><a href="#core">Our Mission</a></li>
+                <li class="nav-three"><a href="#jquerytuts">Our Products</a></li>
+                <li class="nav-four last"><a href="#classics">Classics</a></li>
+    </ul>
+
+    <div class="list-wrap">
+
+		<ul id="featured">
+        	<h1>Counties We Cover</h1>
+			<li><img src="images/county.png" alt="counties served">
+            </li>
+		</ul>
+
+		 <ul id="core" class="hide">
+			<li><p>Our vision is to e pluribis unum lorem ipsum dolor bbq indivit libertatum aquarium poodletzu chickpea avenue of the de la rosa racetrack pavement etc.</p></li>
+		 </ul>
+
+		 <ul id="jquerytuts" class="hide">
+		   <li>Stuff in here!</li>
+		 </ul>
+
+		 <ul id="classics" class="hide">
+		   <li>Stuff in here!</li>
+		 </ul>
+
+    </div> <!-- END List Wrap -->
+ </div> <!-- END tabber -->
+
+<footer><small>&copy 2012 Valley Roof Professionals</small></footer>
+</body>
+</html>

@@ -1,0 +1,450 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* styling html tag to center page */
+html {
+	margin: 0.875em auto;
+ 	padding: 0 1em;
+	max-width: 120em; /* 1920px / 16px = 120em */
+ 	box-sizing: border-box; /* traditional model: box sizes applied to border AND everything inside. */
+	-moz-box-sizing: border-box; /* Firefox, etc. */
+	-ms-box-sizing: border-box; /* for IE10 and below */
+	font-size: 62.5%
+}
+
+ 
+/* unify all the border box items here */
+* html, header {
+	 box-sizing: border-box; /* traditional model: box sizes applied to border AND everything inside. */
+	-moz-box-sizing: border-box; /* Firefox, etc. */
+	-ms-box-sizing: border-box; /* for IE10 and below */
+}
+
+body {
+	background-color:  #0066cc;
+	font: 1.4rem "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+header {
+	position: relative;
+	float: none;
+	width: auto;
+	min-width: 20em;
+	/* background-color: #00186e; */
+	margin: 0 0 16px 0;
+	padding: 1.5em 0 1.3em 1.5em;
+	-webkit-transition: all 0.4s ease-in-out; 
+   -moz-transition: all 1000ms ease-in-out; 
+    -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+     -o-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+        transition: all 1000ms ease-in-out; /* custom */
+}
+
+
+h1 {
+	font-size: 3rem;
+}
+/* Mars Hill Bible School */
+h1.school-name {
+	width: 100%;
+	color: white;
+	font-size: 4rem;
+	-webkit-transition: all 0.4s ease-in-out; 
+   -moz-transition: all 1000ms ease-in-out; 
+    -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+     -o-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+        transition: all 1000ms ease-in-out; /* custom */
+}
+
+nav.full-wide {
+	position: relative;
+	float: none;
+	width: 100%;
+	min-width: 10em;
+}
+#big-box {
+	position: relative;
+	float: none;
+	width: 20%;
+}
+#big-box header {
+	background-color: #0096cc;
+	padding: 8px;
+}
+
+
+
+
+
+
+
+/* **** MENU **** */
+/* moved the children out of the visual ara */
+/* basic navigation styling */
+nav {
+   a {
+      color: inherit; /* ie6 and 7 require explicit color values */
+      display: block;
+      text-decoration: none;
+   }
+}
+/* MAIN-NAVIGATION */
+.main-navigation {
+	.cf;
+	font-size: 1.5rem;
+	text-shadow: 0 1px 1px #fff;
+	
+	ul, li, a {
+		float: left;
+	}
+	ul {
+		border: 1px solid #ddd;
+		.border-radius();
+		.linear-gradient();
+	}
+	li {
+		position: relative;
+		border-right: 1px solid #cccccc;
+	}
+	li:hover {
+		a {
+			.linear-gradient(#dfdfdf, #c0bebe, 100%);
+			}
+		.children {
+			left: 50%;
+			
+			a {
+				background: none;
+			}
+			a:hover {
+				background: #dff2ff;
+			}
+		}
+	}
+	li:last-child {
+		border-right: none;
+	}
+	a {
+		.border-radius(3px);
+		height: 35px;
+		line-height: 35px;
+		margin: 3px;
+		padding: 0 15px;
+	}
+	.children {
+		background: #cccccc;
+		.box-shadow();
+		left: -999em;
+		margin-left: -65px;
+		position: absolute;
+		top: 30px;
+		width: 16em;
+		z-index: 99;
+		
+		li, a {
+			float: none;
+		}
+		li {
+			border-right: none;
+		}
+		a {
+			.border-radius(3px);
+			height: 30px;
+			line-height: 30px;
+			margin: 3px;
+		}
+	}
+}
+
+.border-radius (@radius: 5px) {
+	-moz-border-radius: @radius;
+	-webkit-border-radius: @radius;
+	border-radius: @radius;
+}
+.box-shadow (@x: 0, @y: 5px, @blur: 5px, @spread: -5px, @color: #000) {
+	-moz-box-shadow: @x @y @blur @spread @color;
+	-webkit-box-shadow: @x @y @blur @spread @color;
+	box-shadow: @x @y @blur @spread @color;
+}
+.linear-gradient (@start: #fff, @end: #ddd, @percent: 100%) {
+	background: @start; /* Old */
+	background: -moz-linear-gradient(top,  @start 0%, @end @percent); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,@start), color-stop(@percent,@end)); /* Chrome, Safari 4+ */
+	background: -webkit-linear-gradient(top,  @start 0%,@end @percent); /* Chrome 10+, Safari 5.1+ */
+	background: -o-linear-gradient(top,  @start 0%,@end @percent); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  @start 0%,@end @percent); /* IE 10+ */
+	background: linear-gradient(top,  @start 0%,@end @percent); /* W3C */
+}
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+.cf:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+
+#clear {
+	clear: both;
+}
+
+
+
+
+/* ******** */
+
+@media only screen and (max-width: 870px) 
+{
+	
+	header {
+	margin: 0 0 12px 0;
+	padding: 1em 0 .7em 1em;
+	-webkit-transition: all 0.4s ease-in-out; 
+   -moz-transition: all 800ms ease-in-out; 
+    -ms-transition: all 800ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+     -o-transition: all 800ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+        transition: all 800ms ease-in-out; /* custom */
+	}
+
+	
+	h1.school-name {
+	width: 100%;
+	color: white;
+	font-size: 3.4rem;
+	-webkit-transition: all 0.4s ease-in-out; 
+   -moz-transition: all 800ms ease-in-out; 
+    -ms-transition: all 800ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+     -o-transition: all 800ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+        transition: all ease-in-out; /* custom */
+	}
+	
+	.main-navigation {
+		ul {
+			border: none;
+			background: none;
+			.border-radius(0);
+			}
+		li {
+			border-right: none;
+			}
+			
+			li:hover 
+			{
+				a {
+				.linear-gradient(#ff8400, #e07400, 100%);
+				color: #fff;
+				text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+				}
+			
+				.children {
+				border: 1px solid #dddddd;
+				.border-radius(5px);
+				top: 40px;
+			
+					a {
+					color: #000;
+					text-shadow: 0 1px 1px #fff;
+						}
+					a:hover {
+					.linear-gradient(#ff8400, #e07400, 100%);
+					color: #fff;
+					text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+							}
+					}
+				}
+		
+		a {
+			border: 1px solid #ddd;
+			.border-radius();
+			font-size: 1.2em;
+			height: auto;
+			.linear-gradient();
+			line-height: 1em;
+			padding: 15px;
+			}
+		}
+	
+	.instructions {
+		.border-radius();
+		color: #fff;
+		font-size: 1.2em;
+		.linear-gradient(#ff8400, #e07400, 100%);
+		line-height: 1em;
+		margin: 0 0 5px;
+		padding: 5px 10px;
+		text-shadow: 0 -1px 1px rgba(0,0,0,0.5);
+		}
+		
+	div#header-items {
+	position: relative;
+	border: 1px solid #cccccc;
+	width: 100%;
+	-webkit-transition: all 0.4s ease-in-out; 
+   -moz-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+     -o-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+        transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); /* custom */	
+        }
+     
+    section#slideshow {
+	display: none;
+	position: relative;
+	float: right;
+	padding-bottom: 66.67%;
+	height: 0;
+	border: none;
+	}
+}
+	
+.main-navigation select {
+	font-size: 1.5em;
+	}
+
+
+@media only screen and (max-device-width: 480px) and (orientation: portrait) 
+{
+	html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+	
+	header {
+	border: none;
+	background-color: #0066cc;
+	}
+	
+	h1 {
+	font-size: 28px;
+	padding: 12px 22px;
+	margin: 0 0;
+	color: white;
+	}
+	
+	h1.school-name {
+	width: 100%;
+	border:  none;
+	}
+}
+
+
+
+
+/* accordion */
+/* home page news accordion */
+
+/* heading */
+
+#header-items {
+	position: relative;
+	float: left;
+	width: 50%;
+	border: solid 1px #0099cc;
+}
+.header-text {
+	font-size: 2.4rem;
+	color: #ffffff;
+	padding: .6em .2em .4em .5em;
+	background-color: #0066cc; opacity: .4;
+}
+
+
+
+
+
+/* real accordion */
+#accordion {
+	position: relative;
+	float: none;
+	width: auto;
+}
+#accordion h3 {
+	font-size: 1.4rem;
+}
+#accordion p {
+	font-size: 1.4rem;
+}
+h2.acctrigger {
+	padding: 0 0 0 50px;
+	margin: 0 0 5px 0;
+	background: url(h2_trigger_a.gif) no-repeat;
+	height: 46px;
+	line-height: 36px;
+	width: auto; /* 400px */
+	font-weight: normal;
+	float: left;
+	font-size: 1rem;
+}
+h2.acctrigger a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+h2.acctrigger a:hover { color: #cccccc; }
+h2.active {background-position: left bottom;} /*--When toggle is triggered, it will shift the image to the bottom to show its "opened" state--*/
+.acctoggle_container {
+	margin: 0 0 5px;
+	padding: 0;
+	border: 1px solid #003A98;
+	background: #00186e url(toggle_block_stretch.gif) repeat-y left top;
+	overflow: hidden;
+	font-size: 1rem;
+	width: auto; /* 400px */
+	clear: both;
+	-webkit-box-shadow: 2px 2px 5px #000000;
+	-moz-box-shadow: 2px 2px 5px #000000;
+	box-shadow: 2px 2px 5px #000000;
+}
+.acctoggle_container .block {
+	padding: 20px; /*--Padding of Container--*/
+	background: url(toggle_block_btm.gif) no-repeat left bottom; /*--Bottom rounded corners--*/
+}
+/* picture */
+figure.accordion-pic img {
+	position: relative;
+	float: left;
+	max-width: 50%;
+	margin: 0 12px 0 8px;
+}
+
+
+
+
+
+
+/* slideshow */
+section#slideshow {
+	position: relative;
+	float: none;
+	border: 1px solid #0099cc;
+	width: auto;
+}
+object.responsive-slideshow-o,
+embed.responsive-slideshow-e  {
+	position: relative;
+	float: none;
+	height:30em;
+	width: 100%;
+}
+
+#calendar-intrinsic {
+	position: relative;
+	float: right;
+	border:  1px solid #cccccc;
+	height: 0;
+	width: 100%;
+	padding-bottom: 60%;
+}
+#calendar-intrinsic iframe.calendar-stretch {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
