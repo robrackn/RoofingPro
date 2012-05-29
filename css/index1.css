@@ -35,6 +35,21 @@ header#head {
 	background: #0869a0;
 	overflow: auto;
 }
+
+/* Chris Coyier clearfix http://css-tricks.com/pseudo-element-roundup/ */
+header#head:before,
+header#head:after {
+	content: "";
+	display: table;
+}
+header#head:after {
+	clear:  both;
+}
+header#head {
+	zoom: 1; /* For IE 6/7 (triggers hasLayout) */
+}
+/* end clearfix */
+
 img.logo {
 	width: 20%;
 	position: relative;
@@ -42,28 +57,30 @@ img.logo {
 	display: inline-block;
 	vertical-align: top;
 }
-h1.logo-text {
-	float: left;
-	position: relative;
-}
-img.map {
-	width: 33%;
-	position: relative;
-	float: left;
-}
+
+
 .logo-text {
-	font-size: 6rem;
+	float: left;
+	position: relative;
+	font-size: 5rem;
 	color: white;
 	font-weight: bold;
 	font-family: Palatino, Times, serif;
 	display: inline-block;
 	vertical-align: top;
-	margin: 0 0 0 .25em;
+	margin: .9em 0 0 .25em;
 	-webkit-transition: all 0.4s ease-in-out; 
     -moz-transition: all 1000ms ease-in-out; 
     -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
     -o-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
     transition: all 1000ms ease-in-out; /* custom */
+}
+
+
+img.map {
+	width: 33%;
+	position: relative;
+	float: left;
 }
 
 #big-section {

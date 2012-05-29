@@ -7,7 +7,7 @@ html {
 }
 
 html, body {
-	width: 320px;
+	width: 480px;
 	font-size: 1em;
 	color: #000000;
 	font-family: 'Signika', Helvetica;
@@ -38,7 +38,7 @@ header#head {
 	float: none;
 	margin: 0 0 0 0;
 	padding: 3%;
-	width: 320px;
+	width: 480px;
 	background: #eeeeee;
 }
 img.logo {
@@ -54,7 +54,7 @@ img.logo {
 
 /* valley roofing pros */
 .logo-text {
-	font-size: 1.05rem;
+	font-size: 1.5rem;
 	color: black;
 	font-weight: bold;
 	font-family: Palatino, Times, serif;
@@ -70,7 +70,7 @@ img.logo {
 
 /* building trust one roof at a time */
 .logo-tagline {
-	font-size: .875rem;
+	font-size: 1.21rem;
 	color: red;
 	font-weight: bold;
 	font-family: Palatino, Times, serif;
@@ -121,10 +121,10 @@ aside#counties-served {
 	-webkit-border-radius: 12px; 
 }
 aside#counties-served h2 {
-	font-weight: bold;
+	font-weight: normal;
 	margin: 0 0 .2em 0;
 	padding: 0 0 .3em 0;
-	border-bottom: 2px solid white;
+	border-bottom: 1px solid white;
 }
 ul.counties li {
 	display: list-item;
@@ -138,8 +138,8 @@ ul.counties li {
 aside#estimate {
 	font-size: 1rem;
 	float: right;
-	margin: .25em .9em -.5em 0;
-	padding: 0 .5em;
+	margin: 0 .9em -.5em 0;
+	padding: .5em .5em;
 	background-color: greenyellow;
 	width: 50%;
 	text-align: center;
@@ -164,7 +164,7 @@ ul.services li {
 	line-height: 1.5em;
 }
 ul.services li.last-list-line {
-	line-height: 1em;
+	line-height: 1.5em;
 }
 
 h2.shingle-selector {
@@ -179,7 +179,7 @@ h2.shingle-selector {
 
 footer#site-footer {
 	float:  left;
-	width: 320px;
+	width: 480px;
 	background-color: #eeeeee;
 	margin: .5em 0;
 	text-align: center;
