@@ -128,8 +128,10 @@ figure.head-logo img {
 	font-weight: normal !important;
 }
 
-aside#estimate-area {
-	display: inline-block;
+/* right side of page */
+#small-area {
+	overflow: hidden;
+	display: block;
 	position: relative;
 	float: right;
 	width: 32.395833%;
@@ -203,8 +205,91 @@ strong {
 	font-size: 1.6rem;
 }
 
+/* *** GAF *** */
 h2.gaf-caption {
+	float: left;
+	color: #0096d7;
+	margin: 10% 0 0 0;
+	padding: 0 0 0 0;
+	width: 100%;
+	text-align: center;
+}
+a.shingle-button {
+	position: relative;
+	width: 750%;
+	max-width: 75%;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	padding: 4% 6%;
+	margin: 6% 0 10% 14.5%;
+	background: -moz-linear-gradient(
+		top,
+		#0097d7 0%,
+		#a3d2e6 22%,
+		#006894);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#0097d7),
+		color-stop(0.22, #a3d2e6),
+		to(#006894));
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border: 3px solid #ffffff;
+	-moz-box-shadow:
+		0px 3px 11px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(206,226,235,1);
+	-webkit-box-shadow:
+		0px 3px 11px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(206,226,235,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
 
+
+
+/* *** MAP *** */
+aside.county-map {
+	position: relative;
+	float: left;
+	width: 100%;
+	margin: 5% 0 14% 0;
+	padding: 16% 0 0 0;
+	border-top: solid 4px white;
+}
+.county-map-caption {
+	position: relative;
+	float: left;
+	width: 80%;
+	padding: 2%;
+	margin: 0 0 1% 10%;
+	color: white;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background-color: #0096d7;
+	text-align: center;
+	font-style: italic;
+}
+.county-map img {
+	float: left;
+	position: relative;
+	width: 100%;
+	max-width: 100%;
+	padding: 5%;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border: 2px solid #0096d7;
+	margin: 5% 0 0 0;
+	background-color: whitesmoke;
+}
 
 
 
@@ -237,7 +322,7 @@ img.map {
 }
 h2.vision-statement {
 	color: white;
-	font-size: 1.4rem;
+	font-size: 1.1rem;
 	line-height: 1.8rem;
 }
 
@@ -262,12 +347,26 @@ article#services h2 {
 	font-weight: bold;
 	text-align: left;
 	padding: 12% 0 1% 0;
+	text-shadow: #fff 1px 1px 0;
 }
 article#services p {
 	font-size: .7rem;
 	line-height: 1rem;
 	text-align: left;
 	padding: 12% 0 16% 0;
+}
+article#services img {
+	width: 100%;
+	max-width: 100%;
+	-moz-box-shadow:
+		0px 3px 86px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(206,226,235,1);
+	-webkit-box-shadow:
+		0px 3px 8px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(206,226,235,1);
+	position: relative;
+	float: left;
+	display: inline-block;
 }
 
 
@@ -342,6 +441,7 @@ ul.services li:nth-last-child(1) {
 	max-width: 100%;
 }
 .shingle-selector a {
+	display: none;
 	position: relative;
 	float: right;
 	font-size: .9rem;
@@ -362,7 +462,7 @@ footer#site-footer {
 	position: relative;
 	width: 100%;
 	background-color: #eeeeee;
-	margin: 7% 0 0 0;
+	margin: 2% 0 0 0;
 	text-align: center;
 	/* gradient */
 	background: rgb(201,215,217); /* Old browsers */
