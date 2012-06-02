@@ -16,8 +16,12 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
+<!-- small stylesheet -->
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 200px) and (max-width: 420px)" href="css/max600.css" />
 <!-- primary style sheet -->
-<link href="css/index1.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" media="screen and (min-width: 421px) and (max-width: 720px)" href="css/max720.css" type="text/css" />
+
+
 
 <!-- force very old versions of IE to behave like a standards-compliant browser -->
 <!-- link to information: http://code.google.com/p/ie7-js/ -->
@@ -36,8 +40,8 @@
 
 <!-- iphone portrait orientation -->
 <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
-<link rel="stylesheet" media="only screen and (max-device-width: 480px) and (orientation:portrait)" href="css/iphone-portrait1.css">
-<link rel="stylesheet" media="only screen and (max-device-width: 480px) and (orientation:landscape)" href="css/iphone-landscape1.css">
+<link rel="stylesheet" media="only screen and (max-device-width: 480px) and (orientation:portrait)" href="css/iphone-portrait2.css">
+<link rel="stylesheet" media="only screen and (max-device-width: 480px) and (orientation:landscape)" href="css/iphone-landscape2.css">
 <!-- make nice device-specific icons if saved to iphone/ipad home screen -->
 <link rel="apple-touch-icon" href="vrp.png" />
 <link rel="apple-touch-icon" sizes="72x72" href="vrp72.png" />
@@ -46,13 +50,15 @@
 
 <body>
 
-
-<header id="head"><img class="logo" src="images/Logo.png"></img>
-	<h1 class="logo-text">Valley Roofing Professionals</h1>
+<header>
+	<figure class="head-logo"><img src="images/Logo.png"></img></figure>
+	<h1 class="logo-text">Valley Roofing Professionals, Inc.</h1>
     <h2 class="logo-tagline">Building Trust One Roof At A Time.</h2>
 </header>
 
-<div id="vision"><h2>Our vision is to e pluribus unum et cetera doloris unum laisses frere to be or not.</h2></div>
+<div id="vision">
+  <h2>Our vision is to e pluribus unum et cetera doloris unum laisses frere to be or not.</h2>
+</div>
 
 <img class="map" src="images/county-list.png"></img>
 
@@ -74,7 +80,7 @@
 <aside id="estimate">Request an ESTIMATE</aside>
 
 <section id="main">
-	<ul class="services"
+<ul class="services"
     ><li>Storm Damage</li
     ><li>New Roof Installs</li
     ><li>Roof Replacement</li

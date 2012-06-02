@@ -1,0 +1,81 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* unify all the border box items here */
+* html, header {
+	 box-sizing: border-box; /* traditional model */
+	-moz-box-sizing: border-box; /* Firefox, etc. */
+	-ms-box-sizing: border-box;
+}
+
+/* styling html tag to center page */
+html {
+	margin: 0.875em auto;
+ 	padding: 0 1em;
+	max-width: 180em; /* 1920px / 16px = 120em */
+	font-size: 62.5% /* force base 10 1.4em = 14px, etc */
+}
+
+body {
+	background-color: #dbd0b5;
+	font: 1.4rem "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+
+#text-area {
+	width: 50%;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+
+.huge {
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 2.0rem;
+	font-weight: bold;
+	line-height: 5.2rem
+}
+h2 {
+	font-size: 1.9rem;
+	font-weight: bold;
+	line-height: 4.25rem;
+}
+h3 {
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 4.125rem;
+}
+h4 {
+	font-size: 1.7rem;
+	font-weight: bold;
+	line-height: 3.8rem;
+}
+h5 {
+	font-size: 1.6rem;
+	font-weight: bold;
+	line-height: 3.5rem;
+}
+h6 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	line-height: 3.1rem
+}
+
+p {
+	font-size: 1.4rem;
+	line-height: 2.1rem;
+	margin: 0 0 2% 0;
+}
+
+a {
+	text-decoration: none;
+	color: #444444;
+}
+
+ul li {
+ 	line-height: 2.2rem;
+	list-style-position: inside;
+	list-style-type: none;
+}

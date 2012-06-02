@@ -1,23 +1,19 @@
 @charset "UTF-8";
 /* CSS Document */
 
+/* unify all the border box items here */
+* html, header {
+	 box-sizing: border-box; /* traditional model */
+	-moz-box-sizing: border-box; /* Firefox, etc. */
+	-ms-box-sizing: border-box;
+}
+
 /* styling html tag to center page */
 html {
 	margin: 0.875em auto;
  	padding: 0 1em;
 	max-width: 180em; /* 1920px / 16px = 120em */
- 	box-sizing: border-box; /* traditional model: box sizes applied to border AND everything inside. */
-	-moz-box-sizing: border-box; /* Firefox, etc. */
-	-ms-box-sizing: border-box; /* for IE10 and below */
 	font-size: 62.5%
-}
-
- 
-/* unify all the border box items here */
-* html, header {
-	 box-sizing: border-box; /* traditional model: box sizes applied to border AND everything inside. */
-	-moz-box-sizing: border-box; /* Firefox, etc. */
-	-ms-box-sizing: border-box;
 }
 
 body {
@@ -27,13 +23,12 @@ body {
 
 
 /* *** header *** */
-header#head {
+header {
 	position: relative;
-	float: none;
-	width: auto;
+	float: left;
+	width: 100%;
 	padding: 1%;
-	border: 1px solid green;
-	background: #0869a0;
+	border: 1px solid gray;
 	overflow: auto;
 	background: #eeeeee;
 	/* gradient */
@@ -46,30 +41,38 @@ background: -o-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(238,238,238,0.7
 background: -ms-linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(238,238,238,0.7) 100%); /* IE10+ */
 background: linear-gradient(top,  rgba(204,204,204,1) 0%,rgba(238,238,238,0.7) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', endColorstr='#b3eeeeee',GradientType=0 ); /* IE6-8 */
+
 }
 
+
 /* Chris Coyier clearfix http://css-tricks.com/pseudo-element-roundup/ */
-header#head:before,
-header#head:after {
+header:before,
+header:after {
 	content: "";
 	display: table;
 }
-header#head:after {
+header:after {
 	clear:  both;
 }
-header#head {
+header {
 	zoom: 1; /* For IE 6/7 (triggers hasLayout) */
 }
 /* end clearfix */
 
-
-img.logo {
-	width: 20%;
-	max-width: 100%;
+/* *** Logo *** */
+figure.head-logo {
+	width: 11%;
+	min-width: 10%;
+	max-width: 20%;
 	position: relative;
 	float: left;
-	display: inline-block;
-	vertical-align: top;        
+	display: inline-block;   
+	overflow: auto; 
+}
+.head-logo img {
+	width: 100%;
+	max-width: 100%;
+	vertical-align: top;       
 }
 
 
@@ -78,13 +81,14 @@ img.logo {
 	width: auto;
 	float: left;
 	position: relative;
+	margin: .2em .25em;
+	padding: 0;
 	font-size: 5rem;
 	color: black;
 	font-weight: bold;
 	font-family: Palatino, Times, serif;
 	display: inline-block;
 	vertical-align: top;
-	margin: .9em 0 0 .25em;
 	-webkit-transition: all 0.4s ease-in-out; 
     -moz-transition: all 1000ms ease-in-out; 
     -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
@@ -97,13 +101,14 @@ img.logo {
 	float: left;
 	position: relative;
 	font-size: 3.8rem;
+	margin: -.125em 0 0 .25em;
+	padding: 0;
 	color: red;
 	font-weight: bold;
 	font-family: Palatino, Times, serif;
 	font-style: italic;
 	display: inline-block;
 	vertical-align: top;
-	margin: 0 0 0 .4em;
 	-webkit-transition: all 0.4s ease-in-out; 
     -moz-transition: all 1000ms ease-in-out; 
     -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
@@ -111,7 +116,17 @@ img.logo {
     transition: all 1000ms ease-in-out; /* custom */
 }
 
-
+#vision {
+	position: relative;
+	float: left;
+	width: 100%;
+	padding: 2em;	
+}
+#vision h2 {
+	color: #444444;
+	font-size: 3rem;
+	text-align: center;
+}
 img.map {
 	width: 33%;
 	position: relative;
