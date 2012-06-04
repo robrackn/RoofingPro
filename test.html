@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box {
+        /* basic styling */
+        width: 500px;
+        height: 30px;
+        border: 1px solid #555;
+        font: 1.4em Arial;
+      
+        /* flexbox setup */
+        display: -webkit-box;
+        -webkit-box-orient: horizontal;
+      
+        display: -moz-box;
+        -moz-box-orient: horizontal;
+      
+        display: box;
+        box-orient: horizontal;
+		
+		-webkit-flex-pack: start;
+      }
+      
+      .box > div {
+        -webkit-box-flex: 2;
+        -moz-box-flex: 1;
+        box-flex: 1;
+      }
+      
+      /* our colors */
+      .box > div:nth-child(1){ background : #FCC; }
+      .box > div:nth-child(2){ background : #CFC; }
+      .box > div:nth-child(3){ background : #CCF; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div>un asdfjasldfkja asdlfjk al jasdflkj asdf asdlkfj adsf</div>
+      <div>deux alsdjkf asdlkfj</div>
+      <div>trois as ldjf a sjdf jklasdklfj asdlkf </div>
+    </div>
+  </body>
+</html>​
