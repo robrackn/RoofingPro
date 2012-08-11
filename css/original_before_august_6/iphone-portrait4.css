@@ -1,0 +1,487 @@
+@charset "UTF-8";
+/* CSS Document */
+* { 
+	box-sizing: border-box; /* traditional model: box sizes applied to border AND everything. */
+	-moz-box-sizing: border-box; /* Firefox, etc. */
+	-ms-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-transition: all 0.4s ease-in-out; 
+    -moz-transition: all 1000ms ease-in-out; 
+    -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    -o-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    transition: all 1000ms ease-in-out; /* custom */
+
+}
+
+html {
+ 	margin: 0 0;
+ 	padding: 0 0;
+}
+
+
+
+html, body {
+	width: 320px;
+	max-width: 320px;
+	margin: 0 auto;
+	font-size: 1em;
+	color: #000000;
+	font-family: 'Signika', Helvetica;
+	background-color: #e6edf0;
+}
+
+/* ********************* */
+/* logo and company name */
+header {
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 320px;
+	max-width: 320px;
+	border-top: none;
+	border-bottom: none;
+	background: #e9f4f6;
+	/* gradient */
+	background: rgb(233,244,246); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2U5ZjRmNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNjOWQ3ZDkiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(233,244,246,1) 0%, rgba(201,215,217,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(233,244,246,1)), color-stop(100%,rgba(201,215,217,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(233,244,246,1) 0%,rgba(201,215,217,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(233,244,246,1) 0%,rgba(201,215,217,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(233,244,246,1) 0%,rgba(201,215,217,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(233,244,246,1) 0%,rgba(201,215,217,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9f4f6', endColorstr='#c9d7d9',GradientType=0 ); /* IE6-8 */
+
+}
+
+/* *** logo *** */
+figure.head-logo img {
+	position: relative;
+	float: left;
+	margin: 8px 0 8px 6px;
+	padding: 0;
+	width: 60px;
+	max-width: 60px;
+	display: block;
+	-webkit-transition: all 0.4s ease-in-out; 
+    -moz-transition: all 1000ms ease-in-out; 
+    -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    -o-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    transition: all 1000ms ease-in-out; /* custom */
+}
+
+/* valley roofing pros */
+.logo-text {
+	position: relative;
+	float: left;
+	display: inline-block;
+	font-size: 1.3rem;
+	line-height: 1.3rem;
+	margin: 10px 0 3px 6px;
+	width: 200px;
+	color: black;
+	font-weight: bold;
+	font-family: Palatino, Times, serif;
+	display: inline-block;
+	vertical-align: top;
+	word-wrap: break-word;
+	-webkit-transition: all 0.4s ease-in-out; 
+    -moz-transition: all 1000ms ease-in-out; 
+    -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    -o-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    transition: all 1000ms ease-in-out;
+}
+
+/* building trust one roof at a time */
+.logo-tagline {
+	position: relative;
+	float:left;
+	display: inline-block;
+	font-size: 1.1rem;
+	color: #bc2c0a;
+	width: 308px;
+	margin: 0 0 6px 6px; /* needed to align left with logo */
+	text-align: left;
+	font-weight: bold;
+	font-family: Palatino, Times, serif;
+	font-style: italic;
+	/* animation */
+	-webkit-transition: all 0.4s ease-in-out; 
+    -moz-transition: all 1000ms ease-in-out; 
+    -ms-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    -o-transition: all 1000ms cubic-bezier(0.235, 0.000, 0.760, 0.990); 
+    transition: all 1000ms ease-in-out; /* custom */
+}
+
+.normal-weight {
+	font-weight: normal !important;
+}
+
+/* right side of page */
+#small-area {
+	display: block;
+	float: none;
+	width: 320px;
+	max-width: 320px;
+	min-width: 320px;
+	border-left: none;
+	background: #c9d7d9; /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M5ZDdkOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlOWY0ZjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  #c9d7d9 0%, #e9f4f6 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#c9d7d9), color-stop(100%,#e9f4f6)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #c9d7d9 0%,#e9f4f6 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #c9d7d9 0%,#e9f4f6 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #c9d7d9 0%,#e9f4f6 100%); /* IE10+ */
+background: linear-gradient(left,  #c9d7d9 0%,#e9f4f6 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9d7d9', endColorstr='#e9f4f6',GradientType=1 ); /* IE6-8 */
+}
+
+
+/* button to request estimate */
+/* *** button *** */
+a.button {
+	position: relative;
+	width: 300px;
+	max-width: 300px;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .9rem;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	padding: 12px 6px;
+	margin: 24px 10px 18px 10px;
+	background: -moz-linear-gradient(
+		top,
+		#0097d7 0%,
+		#a3d2e6 22%,
+		#006894);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#0097d7),
+		color-stop(0.22, #a3d2e6),
+		to(#006894));
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border: 3px solid #e9f4f6;
+	-moz-box-shadow:
+		0px 3px 11px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(206,226,235,1);
+	-webkit-box-shadow:
+		0px 3px 11px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(206,226,235,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+h2.estimate-call {
+	position: relative;
+	width:234px;
+	text-align: center;
+	float: left;
+	color: #0096d7;
+	font-size: .8rem;
+	padding: 0 0 8px 0;
+	border-bottom: solid .125em #e9f4f6;
+	display: none;
+}
+/* modify what I want strong to mean */
+strong {
+	font-weight: bolder;
+	font-size: 1rem;
+}
+
+/* *** GAF *** */
+h2.gaf-caption {
+	font-size: .9rem;
+	line-height: 1.1rem;
+	float: left;
+	color: #0096d7;
+	margin: 24px 0 0 0;
+	padding: 0 30px;
+	width: 234px;
+	text-align: center;
+	display: none;
+}
+a.shingle-button {
+	position: relative;
+	width: 300px;
+	max-width: 300px;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .9rem;
+	font-weight: normal;
+	text-decoration: none;
+	text-align: center;
+	color: #ffffff;
+	padding: 12px 6px;
+	margin: 8px 10px 18px 10px;
+	background: -moz-linear-gradient(
+		top,
+		#0097d7 0%,
+		#a3d2e6 22%,
+		#006894);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#0097d7),
+		color-stop(0.22, #a3d2e6),
+		to(#006894));
+	border-radius: 30px;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border: 3px solid #e9f4f6;
+	-moz-box-shadow:
+		0px 3px 11px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(206,226,235,1);
+	-webkit-box-shadow:
+		0px 3px 11px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(206,226,235,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+
+
+/* *** MAP *** */
+aside.county-map {
+
+	position: relative;
+	float: left;
+	width: 280px;
+	max-width: 280px;
+	margin: 10px 0 0 20px; /* move map area into position */
+	overflow: hidden;
+	padding: 0;
+	border-top: solid .125em #e9f4f6;
+}
+.county-map-caption {
+	position: relative;
+	float: left;
+	width: 280px;
+	max-width: 280px;
+	padding: 12px 0px;
+	margin: 0 0;
+	color: white;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background-color: #0096d7;
+	text-align: center;
+	font-style: italic;
+	-webkit-box-shadow: 2px 2px 6px #999999;
+	-moz-box-shadow: 2px 2px 6px #999999;
+	box-shadow: 2px 2px 6px #999999;
+
+}
+.county-map img {
+	float: left;
+	position: relative;
+	width: 270px;
+	max-width: 270px;
+	padding: 12px;
+	margin: 12px 0 0 5px;
+	overflow: hidden;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border: 2px solid #0096d7;
+	margin: 10px 4 0 0;
+	background-color: whitesmoke;
+	-webkit-box-shadow: -1px 1px 5px #333333;
+	-moz-box-shadow: -1px 1px 5px #333333;
+	box-shadow: -1px 1px 5px #333333;
+}
+
+
+/* *** social *** */
+#head-soc {
+	width: 176px;
+	position: relative;
+	float: left;
+	margin: 18px 0 18px 56px;
+	padding: 0;
+}
+#head-soc ul li {list-style :none; padding: 0 0 0 12px; float: right;}
+#head-soc ul li a {text-indent: -9999px; font-size: 0; line-height: 0; overflow: hidden ; height: 32px; width: 32px ;border: 0; background: url(../images/social-media.gif) no-repeat; display: block;}
+
+/* hover doesn't work on touch so I'll comment them out */
+#head-soc li#g a {background-position: 0px -32px;} /* was 0,0 */
+/* #head-soc li#g a:hover {background-position: 0px -32px;} */
+
+#head-soc li#fb a {background-position: -96px -32px;} /* was 96,0 */
+/* #head-soc li#fb a:hover {background-position: -96px -32px;} */
+
+#head-soc li#twit a {background-position: -128px -32px;} /* was 128,0 */
+/* #head-soc li#twit a:hover {background-position: -128px -32px;} */
+
+#head-soc li#li a {background-position: -160px -32px;} /* was 160,0 */
+/* #head-soc li#li a:hover {background-position: -160px -32px;} */
+
+
+
+
+
+/* hiding map to conserve bandwidth for mobile users */
+img.map {
+	width: 33%;
+	float: none;
+	width: 100%;
+	display: none;
+}
+
+
+
+
+
+
+
+
+/* vision statement */
+#vision {
+	background-color: #0096d7;
+	position: relative;
+	float: left;
+	width: 320px;
+	max-width: 320px;
+	margin: 12px 0 0 0;
+	color: #333333;
+	padding: 8px 10px;
+}
+h2.vision-statement {
+	color: white;
+	font-size: 1rem;
+	line-height: 1.4rem;
+}
+
+
+
+
+
+
+
+
+/* *** main services container *** */
+section#main {
+	position: relative;
+	float: left;
+	width: 320px;
+	max-width: 320px;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	height: 100%;
+}
+
+/* *** services *** */
+article#services {
+	position: relative;
+	float: left;
+	display: block;
+	width: 320px;
+	max-width: 320px;
+	margin: 8px 0 0 0;
+}
+article#services h2 {
+	display: inline-block;
+	color: #0096d7;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+	padding: 0 0 0 10px;
+	text-shadow: #fff 1px 1px 0;
+	margin: 12px 0 0 0;
+}
+article#services p {
+	width: 320px;
+	font-size: .9rem;
+	line-height: 1rem;
+	text-align: left;
+	padding: 4px 0 0 10px;
+}
+/* hiding these because they are too tall and don't fit this situation */
+section#main figure.images {
+	display: none;
+	position: relative;
+	float: left;
+	width: 90px;
+	max-width: 90px;
+	height: 100%;
+	margin: 0 24px 0 0;
+	-moz-box-shadow:
+		0px 3px 86px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(206,226,235,1);
+	-webkit-box-shadow:
+		0px 3px 8px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(206,226,235,1);
+}
+/*
+section#main img {	
+	width: 326px;
+	max-width: 115px;
+	position: relative;
+	float: left;
+} */
+
+/* these are when the screen becomes narrow */
+/* remove on iPhone so it loads quicker */
+.horizontal-images img {
+	position: relative;
+	float: left;
+	display: inline-block;
+	margin: 6px 0 10px 0;
+	padding: 0 0 0 0;
+	width: 320px;
+	max-width: 320px;
+	height: 117px;
+	overflow: hidden;
+	border-bottom: solid 3px #0096d7;
+	display: none;
+}
+
+
+
+
+
+
+
+
+footer#site-footer {
+	float: left;
+	position: relative;
+	width: 300px;
+	max-width: 300px;
+	background-color: #eeeeee;
+	margin: 3px 0 0 0;
+	text-align: center;
+	/* gradient */
+	background: rgb(201,215,217); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M5ZDdkOSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlOWY0ZjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgba(201,215,217,1) 0%, rgba(233,244,246,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(201,215,217,1)), color-stop(100%,rgba(233,244,246,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(201,215,217,1) 0%,rgba(233,244,246,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(201,215,217,1) 0%,rgba(233,244,246,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(201,215,217,1) 0%,rgba(233,244,246,1) 100%); /* IE10+ */
+background: linear-gradient(top,  rgba(201,215,217,1) 0%,rgba(233,244,246,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9d7d9', endColorstr='#e9f4f6',GradientType=0 ); /* IE6-8 */
+}
+/* put office and cell number on same line */
+li.inline-footer {
+	display: inline-block;
+	padding: 1em 2.5em;
+	font-size: .8rem;
+	list-style-type: none;
+}
+small {
+	position: relative;
+	clear: both;
+	font-size: .7rem;
+}
+.footer-text {
+	display: none;
+}
